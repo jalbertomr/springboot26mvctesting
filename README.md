@@ -5,3 +5,6 @@
   @SpringBootTest
 - Test the load of HomeController
   @SpringBootTest - @Test - @Autowired - AssertThat()
+- Test HomeController with random port on Tomcat using TestRestTemplate
+  @SpringBootTest - @LocalServerPort - @Autowired TestRestTemplate - @Test
+  
