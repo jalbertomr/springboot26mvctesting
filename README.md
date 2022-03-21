@@ -13,4 +13,9 @@
             .andDo(print())
             .andExpect(status().isOk())
             .andExpect(content().string(containsString("response from controller")));
--    
+- Only WebLayer Test, Tomcat not used
+  @WebMvcTest - @Autowired MockMvc - @Test   
+  mockMvc.perform(get("/"))
+              .andDo(print())
+              .andExpect(status().isOk())
+              .andExpect(content().string(containsString("response from controller")));
