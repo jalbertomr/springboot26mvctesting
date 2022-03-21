@@ -19,3 +19,5 @@
               .andDo(print())
               .andExpect(status().isOk())
               .andExpect(content().string(containsString("response from controller")));
+- A controller with his service to be more realistic, first injected with @Autowired
+  after created by constructor so @Autowired not needed.
