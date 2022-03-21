@@ -7,4 +7,10 @@
   @SpringBootTest - @Test - @Autowired - AssertThat()
 - Test HomeController with random port on Tomcat using TestRestTemplate
   @SpringBootTest - @LocalServerPort - @Autowired TestRestTemplate - @Test
-  
+- Mocking the HomeController, Tomcat not used, MockMvc
+  @SpringBootTest - @AutoConfigureMockMvc - @Autowired MockMvc - @Test
+  mockMvc.perform(get("/"))
+            .andDo(print())
+            .andExpect(status().isOk())
+            .andExpect(content().string(containsString("response from controller")));
+-    
