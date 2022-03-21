@@ -3,3 +3,5 @@
 - SpringBoot Application HomeController
 - Simple sanity check to check application context loads
   @SpringBootTest
+- Test the load of HomeController
+  @SpringBootTest - @Test - @Autowired - AssertThat()
